@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:task_management_app/task_home.dart';
 
-class TaskApp extends StatefulWidget {
+class TaskApp extends StatelessWidget {
   const TaskApp({super.key});
 
   @override
-  State<TaskApp> createState() => _TaskAppState();
-}
-
-class _TaskAppState extends State<TaskApp> {
-  @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      home: TaskHomePage(),
+    );
   }
 }
